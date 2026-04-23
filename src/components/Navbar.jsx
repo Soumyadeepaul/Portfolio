@@ -21,6 +21,7 @@ function Navbar() {
       {/* NAV LINKS */}
       <div style={{ display: "flex", gap: "1.5rem" }}>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#activities">Activities</a>
         <a href="#contact">Contact</a>

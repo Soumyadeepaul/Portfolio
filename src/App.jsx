@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import ProjectsSidebar from "./components/ProjectsSidebar";
 import Projects from "./components/Projects";
 import Activities from "./components/Activities";
+import Education from "./components/Education";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           </div>
           
 
-          {/* later: Experience, Activities */}
+          {/* later: Education, Experience, Activities */}
+          <Education />
           <Activities />
         </div>
 
