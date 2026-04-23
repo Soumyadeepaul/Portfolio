@@ -1,5 +1,16 @@
 import SocialLinks from "./SocialLinks";
 
+const rankStyle = {
+  color: "goldenrod",
+  fontWeight: "600",
+  fontSize: "1.2rem",
+};
+
+const rankSubStyle = {
+  color: "var(--primary)",
+  fontWeight: "600",
+  fontSize: "0.9rem",
+};
 
 function Hero() {
   return (
@@ -37,9 +48,19 @@ function Hero() {
         </h2>
 
         {/* SUBTEXT */}
-        <p style={{ marginTop: "0.5rem", opacity: 0.7 }}>
-          GATE 2025 Rank 1916
-        </p>
+        <div
+          style={{
+            marginTop: "0.8rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.4rem",
+            alignItems: "center",
+          }}
+        >
+          <span style={rankStyle}>GATE 2025 Rank 1916</span>
+          <span style={rankSubStyle}>GATE 2024 Rank 13242</span>
+          <span style={rankSubStyle}>WBJEE 2020 Rank 6833</span>
+        </div>
 
         <p style={{ marginBottom: "2rem", opacity: 0.7 }}>
           On the path to building AI-driven world
@@ -47,25 +68,26 @@ function Hero() {
 
         {/* BUTTONS */}
         <div
-  style={{
-    display: "flex",
-    justifyContent: "center",   // 🔥 center horizontally
-    marginTop: "2rem",
-  }}
->
-  <a
-    href="SoumyadeepPaul_252CS032_MTech.pdf"
-    target="_blank"
-    style={{
-      position: "relative",
-      padding: "10px 18px",
-      textDecoration: "none",
-      color: "var(--text)",
-      fontWeight: "500",
-      letterSpacing: "0.5px",
-    }}
-  >
-    Resume
+          style={{
+            display: "flex",
+            justifyContent: "center",   // 🔥 center horizontally
+            marginTop: "0.1rem",
+          }}
+          className="nav-links"
+        >
+        <a
+        href="SoumyadeepPaul_252CS032_MTech.pdf"
+        target="_blank"
+        style={{
+          position: "relative",
+          padding: "10px 18px",
+          textDecoration: "none",
+          color: "var(--text)",
+          fontWeight: "500",
+          letterSpacing: "0.5px",
+        }}
+      >
+      Resume
 
     {/* underline animation */}
     <span
@@ -87,7 +109,9 @@ function Hero() {
             marginTop: "2rem",
             display: "flex",
             justifyContent: "center",
+          
         }}
+        className="nav-links"
         >
         <SocialLinks />
         </div>

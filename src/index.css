@@ -185,3 +185,76 @@ body {
   transform: scale(1.05);
 }
 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 1000;
+}
+
+/* NAV LINKS CONTAINER */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* LINKS */
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: 0.2s;
+}
+
+/* HOVER EFFECT (clean underline animation) */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-h);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.6px;
+  color: var(--text-h);
+  position: relative;
+  cursor: pointer;
+}
+
+/* accent underline */
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 30%;
+  height: 2px;
+  background: var(--accent);
+  transition: 0.3s;
+}
+
+.logo:hover::after {
+  width: 100%;
+}

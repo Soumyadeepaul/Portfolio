@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 function Projects() {
   return (
     <section id="projects" style={{ padding: "3rem 2rem" }}>
-      <h2>Projects</h2>
+      {/* <h2>Projects</h2> */}
 
       <div
         style={{

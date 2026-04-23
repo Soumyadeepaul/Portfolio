@@ -10,7 +10,7 @@ function ProjectsSidebar() {
       <h3 style={{ padding: "1rem" }}>Projects</h3>
 
       <div className="scroll-container">
-        {[...projects, ...projects].map((p, i) => (
+        {[...projects].map((p, i) => (
           <div
             key={i}
             onClick={() => setSelected(p)}
