@@ -4,6 +4,7 @@ import ProjectsSidebar from "./components/ProjectsSidebar";
 import Projects from "./components/Projects";
 import Activities from "./components/Activities";
 import Education from "./components/Education";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           {/* later: Education, Experience, Activities */}
           <Education />
           <Activities />
+          <Contact />
         </div>
 
         {/* RIGHT SIDEBAR (desktop only) */}
