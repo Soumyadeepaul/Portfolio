@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Activities from "./components/Activities";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         {/* LEFT */}
         <div>
           <Hero />
-
+          <About />
           {/* 👇 This will appear ONLY on small screens */}
           <div className="mobile-projects">
             <Projects />
