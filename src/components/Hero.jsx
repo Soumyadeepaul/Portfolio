@@ -118,18 +118,57 @@ function Hero() {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div style={{ position: "relative" }}>
+      <div
+        style={{
+          position: "relative",
+          width: "320px",
+          height: "420px",
+        }}
+      >
         <img
-          src="/profile.jpg"
-          alt="profile"
-          style={{
-            width: "320px",
-            height: "420px",
-            objectFit: "cover",
-            borderRadius: "10px",
-          }}
-        />
-      </div>
+        src="/profile.jpg"
+        alt="profile"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          borderRadius: "50px",
+
+
+
+          /* 🔥 EDGE FADE */
+          WebkitMaskImage:
+            "radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
+          maskImage:
+            "radial-gradient(circle at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%)",
+        }}
+      />
+
+      {/* 🔥 DOTTED BLUR OVERLAY */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          borderRadius: "20px",
+          pointerEvents: "none",
+
+          /* dotted pattern */
+          background:
+            "radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px)",
+          backgroundSize: "6px 6px",
+
+          /* blur */
+          backdropFilter: "blur(10px)",
+          WebkitBackdropFilter: "blur(10px)",
+
+          /* fade edges again */
+          WebkitMaskImage:
+            "radial-gradient(circle at center, rgba(0,0,0,0) 55%, rgba(0,0,0,1) 100%)",
+          maskImage:
+            "radial-gradient(circle at center, rgba(0,0,0,0) 55%, rgba(0,0,0,1) 100%)",
+        }}
+      />
+    </div>
     </section>
   );
 }
