@@ -4,7 +4,7 @@ export const education = [
     institute: "National Institute of Technology, Karnataka",
     degree: "M.Tech in Computer Science",
     year: "2025 – Present",
-    score: "CGPA: 9.0/10",
+    score: "CGPA: 8.71/10",
   },
   {
     image: "/education/Aliah_University_Logo.jpg",
