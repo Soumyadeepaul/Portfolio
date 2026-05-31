@@ -1,4 +1,5 @@
 import SocialLinks from "./SocialLinks";
+import "../index.css";
 
 const rankStyle = {
   color: "goldenrod",
@@ -34,12 +35,12 @@ function Hero() {
 
         {/* BIG TEXT */}
         <h1 style={{
-        fontSize: "clamp(2.5rem, 5vw, 4rem)", // responsive 🔥
+        fontSize: "clamp(2.5rem, 5vw, 4rem)", 
         lineHeight: "1.1",
         margin: 0,
         }}>
         I AM <br />
-        <span style={{ fontWeight: "800" }}>Soumyadeep Paul</span>
+        <span className="typing-text">Soumyadeep Paul</span>
         </h1>
 
         {/* ROLE */}
@@ -68,28 +69,52 @@ function Hero() {
 
         {/* BUTTONS */}
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",   // 🔥 center horizontally
-            marginTop: "0.1rem",
-          }}
-          className="nav-links"
-        >
-        <a
-        href="SoumyadeepPaul_252CS032_MTech.pdf"
-        target="_blank"
-        style={{
-          position: "relative",
-          padding: "10px 18px",
-          textDecoration: "none",
-          color: "var(--text)",
-          fontWeight: "500",
-          letterSpacing: "0.5px",
-        }}
-      >
-      Resume
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "1rem", // spacing between items
+    marginTop: "0.1rem",
+  }}
+  className="nav-links"
+>
+  <a
+    href="SoumyadeepPaul_252CS032_MTech_AI.pdf"
+    target="_blank"
+    style={{
+      position: "relative",
+      padding: "10px 18px",
+      textDecoration: "none",
+      color: "var(--text)",
+      fontWeight: "500",
+      letterSpacing: "0.5px",
+    }}
+  >
+    AI Development Resume 
+    <span
+      style={{
+        position: "absolute",
+        left: 0,
+        bottom: 0,
+        width: "100%",
+        height: "1px",
+        background: "var(--text)",
+      }}
+    />
+  </a>
 
-    {/* underline animation */}
+  <a
+    href="SoumyadeepPaul_252CS032_MTech_SDE.pdf"
+    style={{
+      position: "relative",
+      padding: "10px 18px",
+      textDecoration: "none",
+      color: "var(--text)",
+      fontWeight: "500",
+      letterSpacing: "0.5px",
+    }}
+  >
+    Software Development Resume
     <span
       style={{
         position: "absolute",
@@ -102,7 +127,6 @@ function Hero() {
     />
   </a>
 </div>
-
         {/* SOCIAL */}
         <div
         style={{
@@ -189,5 +213,6 @@ const btnOutline = {
   borderRadius: "8px",
   cursor: "pointer",
 };
+
 
 export default Hero;

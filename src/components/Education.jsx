@@ -1,5 +1,5 @@
 import { education } from "../data/education";
-
+import "../index.css";
 function Education() {
   return (
     <section
@@ -24,17 +24,21 @@ function Education() {
         <div style={{ position: "relative", marginBottom: "2.5rem" }}>
           
           {/* LINE */}
-          <div
-            style={{
-              height: "2px",
-              background:
-                "linear-gradient(to right, #7c3aed, #ec4899, #f59e0b)",
-              position: "absolute",
-              top: "20px",
-              left: 0,
-              right: 0,
-            }}
-          />
+         <div
+  style={{
+    height: "2px",
+    position: "absolute",
+    top: "20px",
+    left: 0,
+    right: 0,
+
+    background:
+      "linear-gradient(90deg, #7c3aed, #ec4899, #f59e0b, #7c3aed)",
+    backgroundSize: "300% 100%",
+
+    animation: "gradientFlow 4s linear infinite",
+  }}
+/>
 
           {/* POINTS */}
           <div
@@ -51,17 +55,18 @@ function Education() {
                   {item.year}
                 </p>
 
-                {/* DOT */}
                 <div
-                  style={{
-                    width: "12px",
-                    height: "12px",
-                    borderRadius: "50%",
-                    background: "#ec4899",
-                    margin: "6px auto 0",
-                    boxShadow: "0 0 8px #ec4899",
-                  }}
-                />
+  style={{
+    width: "12px",
+    height: "12px",
+    borderRadius: "50%",
+    background: "#ec4899",
+    margin: "6px auto 0",
+    boxShadow: "0 0 8px #ec4899",
+
+    animation: "blinkDot 2s infinite",
+  }}
+/>
               </div>
             ))}
           </div>

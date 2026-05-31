@@ -17,21 +17,19 @@ function About() {
         }}
       >
         <p style={{ marginBottom: "1.2rem" }}>
-          Hi, I'm Soumyadeep Paul born in year 2002, my mom dad born and brought me up in a small town called Islampur in West Bengal, India.
-          Believing life is a journey and one should find happiness in the process. My mom dad are the support who kept on believeing in me and gave all possible opportunities.
-          Today I stand here because of them and I am grateful for their support and love.
+          Hi, I’m Soumyadeep Paul, born in 2002 and raised in a small town called Islampur in West Bengal, India. I believe life is a journey, and true happiness comes from enjoying the process along the way.
+
+          My parents have always been my greatest support system. They believed in me during every stage of life and provided me with every opportunity they could. Whatever I am today is because of their love, sacrifices, and constant encouragement. I am deeply grateful for their support and guidance.
+
         </p>
 
         <p style={{ marginBottom: "1.2rem" }}>
-          The biggest decision of my life was to keep a belief in self and seek for one of the toughest entrance exam GATE.
-          I am proud to say that I secured a rank of 1916 in GATE 2025, which is a testament to my dedication and hard work.
+          One of the biggest decisions of my life was believing in myself and preparing for one of India’s toughest entrance examinations, GATE. Through consistent dedication, discipline, and hard work, I was able to secure an All India Rank of 1916 in GATE 2025. This achievement reflects my perseverance, determination, and commitment to continuous growth.
         </p>
 
         <p>
-          My focus lies in Artificial Intelligence, backend systems, and scalable architectures.
-          I enjoy turning complex ideas into working products.
-          Currently exploring the intersection of AI and real-world applications,
-          with the goal of building impactful, production-ready systems.
+          My primary interests lie in Artificial Intelligence, backend systems, and scalable architectures. I enjoy transforming complex ideas into practical and efficient products. Currently, I am exploring the intersection of AI and real-world applications, with the goal of building impactful, reliable, and production-ready systems.
+
         </p>
       </div>
 
