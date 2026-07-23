@@ -11,14 +11,14 @@ export const education = [
     institute: "Aliah University",
     degree: "B.Tech in Computer Science",
     year: "2020 – 2024",
-    score: "CGPA: 9.05/10",
+    score: "CGPA: 9.15/10",
   },
   {
     image: "/education/bsf_kadamtala.png",
     institute: "BSF Senior Secondary Residential School, Kadamtala",
     degree: "Higher Secondary (Pure Science)",
     year: "2018 – 2020",
-    score: "Percentage: 90.06%",
+    score: "Percentage: 90.6%",
   },
   {
     image: "/education/scholar_logo.jpg",
